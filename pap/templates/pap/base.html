@@ -88,13 +88,31 @@
 		                      	</li>            
 	                    	</ul>
 	                  	</li>
-	                  	<li><a><i class="fa fa-credit-card"></i> 정산내역 <span class="fa fa-chevron-down"></span></a>
+	                  	<li><a><i class="fa fa-calculator"></i> 정산내역 <span class="fa fa-chevron-down"></span></a>
 	                		<ul class="nav child_menu">
 	                			<li><a href="{% url 'payment' %}">승인/정산달력</a></li>
 	                    		<li><a href="{% url 'payment' %}">통합정산내역조회</a></li>
 	                    		<li><a href="{% url 'payment' %}">정산예정내역조회</a></li>
 	                    		<li><a href="{% url 'payment' %}">세금계산서조회</a></li>
 	                    		<li><a href="{% url 'payment' %}">매출내역조회</a></li>
+	                    	</ul>
+	                  	</li>
+	                  	<li><a><i class="fa fa-archive"></i> 기초 <span class="fa fa-chevron-down"></span></a>
+	                		<ul class="nav child_menu">
+	                      		<li><a>사용자관리<span class="fa fa-chevron-down"></span></a>
+	                      			<ul class="nav child_menu">
+	                      				<li class="sub_menu"><a href="{% url 'payment' %}">사용자리스트</a></li>
+	                      				<li class="sub_menu"><a href="{% url 'payment' %}">사용자상세정보</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'payment' %}">화면권한관리</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'payment' %}">사용자직급/부서관리</a></li>     
+			                      	</ul>
+	                      		</li>
+	                      		<li><a>거래처정보<span class="fa fa-chevron-down"></span></a>
+		                      		<ul class="nav child_menu">
+			                      		<li class="sub_menu"><a href="{% url 'payment' %}">거래처리스트</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'payment' %}">거래처상세정보</a></li>
+			                  		</ul>
+		                      	</li>         
 	                    	</ul>
 	                  	</li>
 	                </ul>
@@ -105,7 +123,7 @@
               	<div class="menu_section">
 	                <h3>Additional</h3>
 	                <ul class="nav side-menu">
-	                	<li><a><i class="fa fa-credit-card"></i> 고객지원 <span class="fa fa-chevron-down"></span></a>
+	                	<li><a><i class="fa fa-question"></i> 고객지원 <span class="fa fa-chevron-down"></span></a>
 	                		<ul class="nav child_menu">
 	                    		<li><a href="{% url 'payment' %}">공지사항</a></li>
 	                      		<li><a>문의하기<span class="fa fa-chevron-down"></span></a>
@@ -122,7 +140,7 @@
 		                      	</li>
 	                    	</ul>
 	                  	</li>
-	                  	<li><a href="{% url 'payment' %}">부가서비스</a></li> 
+	                  	<li><a href="{% url 'payment' %}"><i class="fa fa-gift"></i> 부가서비스</a></li> 
 	                </ul>
 	            </div>
 	        </div>
@@ -182,49 +200,51 @@
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
                       <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span>정수철</span>
+                          <span class="time">12 mins ago</span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        	KS-NET과 제약회사의 ERP시스템과 연동할 정보에 대한 전문이나 상세 컬럼값이 필요합니다. 
                         </span>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span>이경호</span>
+                          <span class="time">2 hour ago</span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        	보건의료 빅데이터 개방시스템의 공공데이터 목록입니다. 
+                          	https://opendata.hira.or.kr/op/opc/selectOpenDataList.do?sno=0&publDataTpCd=&searchCnd=&searchWrd=&pageIndex=2
                         </span>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span>이경호</span>
+                          <span class="time">7 months ago</span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        	의료기관별 상세정보 서비스, 병원코드 정보 서비스, 약국정보 서비스, 요양기관 현황정보를 검토하세요.
                         </span>
                       </a>
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="" /></span>
                         <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
+                          <span>정수철</span>
+                          <span class="time">a year ago</span>
                         </span>
                         <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        	구글 공유사이트 주소입니다.
+                          	https://sites.google.com/view/smartpharm/%ED%99%88
                         </span>
                       </a>
                     </li>
