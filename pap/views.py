@@ -13,6 +13,9 @@ def index(request):
 	# posts = Post.objects.all()
 	return render(request, 'pap/index.html', {})
 
+def payment(request):
+	return render(request, 'pap/payment.html', {})
+
 
 """
 django test
