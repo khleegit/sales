@@ -4,6 +4,11 @@ from .models import Post
 from .forms import PostForm
 from django.shortcuts import redirect
 
+def index(request):
+	# posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+	# posts = Post.objects.all()
+	return render(request, 'pap/index.html', {})
+
 def post_list(request):
 	# posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	posts = Post.objects.all()
