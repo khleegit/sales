@@ -1,14 +1,21 @@
 from django.shortcuts import render, get_object_or_404
-from django.utils import timezone
-from .models import Post
-from .forms import PostForm
-from django.shortcuts import redirect
+# from django.utils import timezone
+# from .models import Post
+# from .forms import PostForm
+# from django.shortcuts import redirect
+
+def login(request):
+	return render(request, 'pap/login.html', {})
+
 
 def index(request):
 	# posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	# posts = Post.objects.all()
 	return render(request, 'pap/index.html', {})
 
+
+"""
+django test
 def post_list(request):
 	# posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	posts = Post.objects.all()
@@ -44,3 +51,5 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'pap/post_edit.html', {'form': form})
+
+"""
