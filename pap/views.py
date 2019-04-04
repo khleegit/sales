@@ -13,6 +13,9 @@ def index(request):
 	# posts = Post.objects.all()
 	return render(request, 'pap/index.html', {})
 
+def card_pm(request):
+    return render(request, 'pap/card_pm.html', {})
+    
 def payment(request):
 	return render(request, 'pap/payment.html', {})
 
