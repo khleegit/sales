@@ -1,5 +1,8 @@
 {% extends 'pap/base.html' %}
 
+{% block headline %}
+	<h3>신용카드 내역 조회</h3>
+{% endblock %}
 
 {% block topcontents %}
 	<div class="x_title">
@@ -155,10 +158,13 @@
      	</ul>
      	<div class="clearfix"></div>
  	</div>
- 	<div class="x_content" style="overflow: auto;">
-     	<table id="Classification" class="table table-striped table-bordered" style="text-align:center;">
+ 	<div class="x_content">
+     	<table id="datatable-checkbox" class="table table-striped table-bordered bulk_action">
         	<thead>
           		<tr>
+          			<th>
+          				<th><input type="checkbox" id="check-all" class="flat"></th>
+          			</th>
            			<th style="text-align:center;">승인상태</th>
            			<th style="text-align:center;">취소구분</th>
              		<th style="text-align:center;">승인구분</th>
@@ -179,6 +185,9 @@
       		</thead>
       		<tbody>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -196,6 +205,9 @@
          			<td>ttd-432446530251-143</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>거절</td>
          			<td>주문번호</td>
          			<td>확인필요</td>
@@ -213,6 +225,9 @@
          			<td>ttd-309746530251-888</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -230,6 +245,9 @@
          			<td>ttd-346876530251-743</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -247,6 +265,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -264,6 +285,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -281,6 +305,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -298,6 +325,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -315,6 +345,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -332,6 +365,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -349,6 +385,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
@@ -366,6 +405,9 @@
          			<td>ttd-668896530251-756</td>
         		</tr>
         		<tr>
+        			<td>
+						<th><input type="checkbox" id="check-all" class="flat"></th>
+					</td>
          			<td>승인</td>
          			<td></td>
          			<td>확인필요</td>
