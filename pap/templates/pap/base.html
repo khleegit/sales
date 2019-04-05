@@ -256,9 +256,29 @@
           </div>
         </div>
         <!-- /top navigation -->
-        <div class="right_col" role="main">
-        	{% block contents %}
-        	{% endblock %}
+        <div class="container" style="height: 100%">
+          <div class="right_col" role="main">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                {% block topcontents %}
+                {% endblock %}
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                {% block middlecontents %}
+                {% endblock %}
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                {% block lowcontents %}
+                {% endblock %}
+              </div>
+            </div>
+          </div>
         </div>
     <!-- jQuery -->
     <script src="../../static/pap/vendors/jquery/dist/jquery.min.js"></script>
