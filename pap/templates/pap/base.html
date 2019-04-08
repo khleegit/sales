@@ -281,7 +281,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 {% block middlecontents %}
-                {% endblock %}
+                {% endblock %}       
               </div>
             </div>
 
@@ -330,6 +330,8 @@
     <!-- bootstrap-daterangepicker -->
     <script src="../../static/pap/vendors/moment/min/moment.min.js"></script>
     <script src="../../static/pap/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    {% block scripts %}
+    {% endblock %}
 
     <!-- Custom Theme Scripts -->
     <script src="../../static/pap/build/js/custom.min.js"></script>
