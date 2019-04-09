@@ -16,6 +16,9 @@ def index(request):
 def card_pm(request):
     return render(request, 'pap/card_pm.html', {})
     
+def cash_pm(request):
+    return render(request, 'pap/cash_pm.html', {})
+
 def payment(request):
 	return render(request, 'pap/payment.html', {})
 
