@@ -58,91 +58,86 @@
 
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              	<div class="menu_section">
-	                <h3>General</h3>
-	                <ul class="nav side-menu">
-	                	<li><a href="{% url 'index' %}"><i class="fa fa-home"></i> Home </a></li>
-	                	<li><a><i class="fa fa-credit-card"></i> 결제내역 <span class="fa fa-chevron-down"></span></a>
-	                		<ul class="nav child_menu">
-	                    		<li><a href="{% url 'payment' %}">통합결제내역조회</a></li>
-	                      		<li><a>신용카드<span class="fa fa-chevron-down"></span></a>
-                              <ul class="nav child_menu">
-                                <li class="sub_menu"><a href="{% url 'card_pm' %}">카드내역</a></li>
-                                <li class="sub_menu"><a href="{% url 'card_pm_ol' %}">카드중복예상내역</a></li>
-                             </ul>
-                            </li>
-	                      		<li><a href="{% url 'test' %}">가상계좌</a></li>
+                <div class="menu_section">
+                    <h3>General</h3>
+                    <ul class="nav side-menu">
+                        <li><a href="{% url 'index' %}"><i class="fa fa-home"></i> Home </a></li>
+                        <li><a><i class="fa fa-credit-card"></i> 결제내역 <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                <li><a href="{% url 'payment' %}">통합결제내역조회</a></li>
+                                <li><a href="{% url 'card_pm' %}">신용카드</a></li>
+                                <li><a href="{% url 'test' %}">가상계좌</a></li>
                             <li><a href="{% url 'cash_pm' %}">계좌이체</a></li>
                             <li><a href="{% url 'cash_pm' %}">휴대폰결제</a></li>
-		                      	<li><a>에스크로<span class="fa fa-chevron-down"></span></a>
-		                      		<ul class="nav child_menu">
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">내역조회</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">배송조회</a></li>
-			                  		 </ul>
-		                      	</li>            
-	                    	</ul>
-	                  	</li>
+                                <li><a>에스크로<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">내역조회</a></li>
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">배송조회</a></li>
+                                    </ul>
+                                </li>            
+                            </ul>
+                        </li>
                       <li><a><i class="fa fa-credit-card"></i> 매입내역 <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="{% url 'payment' %}">매입내역조회</a></li>
                             <li><a href="{% url 'card_pm' %}">매입요청금액집계</a></li>
                         </ul>
                       </li>
-	                  	<li><a><i class="fa fa-calculator"></i> 정산내역 <span class="fa fa-chevron-down"></span></a>
-	                		<ul class="nav child_menu">
-	                			<li><a href="{% url 'payment' %}">승인/정산달력</a></li>
-	                    		<li><a href="{% url 'payment' %}">통합정산내역조회</a></li>
-	                    		<li><a href="{% url 'payment' %}">정산예정내역조회</a></li>
-	                    		<li><a href="{% url 'payment' %}">세금계산서조회</a></li>
-	                    		<li><a href="{% url 'payment' %}">매출내역조회</a></li>
-	                    	</ul>
-	                  	</li>
-	                  	<li><a><i class="fa fa-archive"></i> 기초 <span class="fa fa-chevron-down"></span></a>
-	                		<ul class="nav child_menu">
-	                      		<li><a>사용자관리<span class="fa fa-chevron-down"></span></a>
-	                      			<ul class="nav child_menu">
-	                      				<li class="sub_menu"><a href="{% url 'payment' %}">사용자리스트</a></li>
-	                      				<li class="sub_menu"><a href="{% url 'payment' %}">사용자상세정보</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">화면권한관리</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">사용자직급/부서관리</a></li>     
-			                      	</ul>
-	                      		</li>
-	                      		<li><a>거래처정보<span class="fa fa-chevron-down"></span></a>
-		                      		<ul class="nav child_menu">
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">거래처리스트</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">거래처상세정보</a></li>
-			                  		</ul>
-		                      	</li>         
-	                    	</ul>
-	                  	</li>
-	                </ul>
-            	</div>
+                        <li><a><i class="fa fa-calculator"></i> 정산내역 <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                <li><a href="{% url 'payment' %}">승인/정산달력</a></li>
+                                <li><a href="{% url 'payment' %}">통합정산내역조회</a></li>
+                                <li><a href="{% url 'payment' %}">정산예정내역조회</a></li>
+                                <li><a href="{% url 'payment' %}">세금계산서조회</a></li>
+                                <li><a href="{% url 'payment' %}">매출내역조회</a></li>
+                            </ul>
+                        </li>
+                        <li><a><i class="fa fa-archive"></i> 기초 <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                <li><a>사용자관리<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">사용자리스트</a></li>
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">사용자상세정보</a></li>
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">화면권한관리</a></li>
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">사용자직급/부서관리</a></li>     
+                                    </ul>
+                                </li>
+                                <li><a>거래처정보<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">거래처리스트</a></li>
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">거래처상세정보</a></li>
+                                    </ul>
+                                </li>         
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-            	<br />
+                <br />
    
-              	<div class="menu_section">
-	                <h3>Additional</h3>
-	                <ul class="nav side-menu">
-	                	<li><a><i class="fa fa-question"></i> 고객지원 <span class="fa fa-chevron-down"></span></a>
-	                		<ul class="nav child_menu">
-	                    		<li><a href="{% url 'payment' %}">공지사항</a></li>
-	                      		<li><a>문의하기<span class="fa fa-chevron-down"></span></a>
-	                      			<ul class="nav child_menu">
-	                      				<li class="sub_menu"><a href="{% url 'payment' %}">FAQ</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">상담문의</a></li>	                  
-			                  		</ul>
-	                      		</li>
-	                      		<li><a>기술지원<span class="fa fa-chevron-down"></span></a>
-		                      		<ul class="nav child_menu">
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">매뉴얼</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">각종 서식</a></li>
-			                  		</ul>
-		                      	</li>
-	                    	</ul>
-	                  	</li>
-	                  	<li><a href="{% url 'payment' %}"><i class="fa fa-gift"></i> 부가서비스</a></li> 
-	                </ul>
-	            </div>
+                <div class="menu_section">
+                    <h3>Additional</h3>
+                    <ul class="nav side-menu">
+                        <li><a><i class="fa fa-question"></i> 고객지원 <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                <li><a href="{% url 'payment' %}">공지사항</a></li>
+                                <li><a>문의하기<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">FAQ</a></li>
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">상담문의</a></li>                      
+                                    </ul>
+                                </li>
+                                <li><a>기술지원<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">매뉴얼</a></li>
+                                        <li class="sub_menu"><a href="{% url 'payment' %}">각종 서식</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'payment' %}"><i class="fa fa-gift"></i> 부가서비스</a></li> 
+                    </ul>
+                </div>
             <!-- /sidebar menu -->
 
             <!-- /menu footer buttons -->
@@ -216,7 +211,7 @@
                                   <span class="time">12 mins ago</span>
                                 </span>
                                 <span class="message">
-                                	KS-NET과 제약회사의 ERP시스템과 연동할 정보에 대한 전문이나 상세 컬럼값이 필요합니다. 
+                                    KS-NET과 제약회사의 ERP시스템과 연동할 정보에 대한 전문이나 상세 컬럼값이 필요합니다. 
                                 </span>
                               </a>
                             </li>
@@ -228,8 +223,8 @@
                                   <span class="time">2 hour ago</span>
                                 </span>
                                 <span class="message">
-                                	보건의료 빅데이터 개방시스템의 공공데이터 목록입니다. 
-                                  	https://opendata.hira.or.kr/op/opc/selectOpenDataList.do?sno=0&publDataTpCd=&searchCnd=&searchWrd=&pageIndex=2
+                                    보건의료 빅데이터 개방시스템의 공공데이터 목록입니다. 
+                                    https://opendata.hira.or.kr/op/opc/selectOpenDataList.do?sno=0&publDataTpCd=&searchCnd=&searchWrd=&pageIndex=2
                                 </span>
                               </a>
                             </li>
@@ -241,7 +236,7 @@
                                   <span class="time">7 months ago</span>
                                 </span>
                                 <span class="message">
-                                	의료기관별 상세정보 서비스, 병원코드 정보 서비스, 약국정보 서비스, 요양기관 현황정보를 검토하세요.
+                                    의료기관별 상세정보 서비스, 병원코드 정보 서비스, 약국정보 서비스, 요양기관 현황정보를 검토하세요.
                                 </span>
                               </a>
                             </li>
@@ -253,8 +248,8 @@
                                   <span class="time">a year ago</span>
                                 </span>
                                 <span class="message">
-                                	구글 공유사이트 주소입니다.
-                                  	https://sites.google.com/view/smartpharm/%ED%99%88
+                                    구글 공유사이트 주소입니다.
+                                    https://sites.google.com/view/smartpharm/%ED%99%88
                                 </span>
                               </a>
                             </li>
@@ -293,14 +288,12 @@
               </div>
             </div>
 
-          <!--
             <div style="width: 1630px;">
               <div class="x_panel">
                 {% block lowcontents %}
                 {% endblock %}
               </div>
             </div>
-          -->
           </div>
         </div>
       </div>
@@ -347,39 +340,6 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../../static/pap/build/js/custom.min.js"></script>
-	
+    
   </body>
 </html>
-
-
-
-<!--
-base.html test
-
-{% load static %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/pap.css' %}">
-    </head>
-    <body>
-	    <div class="page-header">
-	    	{% if user.is_authenticated %}
-			    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-			{% endif %}
-	        <h1><a href="/">Django Girls Blog</a></h1>
-	    </div>
-	    <div class="content container">
-	        <div class="row">
-	            <div class="col-md-8">
-	            {% block content %}
-	            {% endblock %}
-	            </div>
-	        </div>
-	    </div>
-	</body>
-</html>
--->

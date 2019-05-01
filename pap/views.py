@@ -13,14 +13,22 @@ def index(request):
 	# posts = Post.objects.all()
 	return render(request, 'pap/index.html', {})
 
+def payment(request):
+    return render(request, 'pap/payment.html', {})
+
 def card_pm(request):
     return render(request, 'pap/card_pm.html', {})
+
+def card_pm_ol(request):
+    return render(request, 'pap/card_pm_ol.html', {})
     
 def cash_pm(request):
     return render(request, 'pap/cash_pm.html', {})
 
-def payment(request):
-	return render(request, 'pap/payment.html', {})
+
+
+def test(request):
+    return render(request, 'pap/test.html', {})
 
 
 """
