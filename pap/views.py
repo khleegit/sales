@@ -21,6 +21,12 @@ def card_pm(request):
 
 def card_pm_ol(request):
     return render(request, 'pap/card_pm_ol.html', {})
+
+def vir_acc(request):
+    return render(request, 'pap/vir_acc.html', {})
+
+def acc_tran(request):
+    return render(request, 'pap/acc_tran.html', {})
     
 def cash_pm(request):
     return render(request, 'pap/cash_pm.html', {})
