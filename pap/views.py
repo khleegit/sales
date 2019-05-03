@@ -27,11 +27,18 @@ def vir_acc(request):
 
 def acc_tran(request):
     return render(request, 'pap/acc_tran.html', {})
+
+def ceph_pm(request):
+    return render(request, 'pap/ceph_pm.html', {})
     
 def cash_pm(request):
     return render(request, 'pap/cash_pm.html', {})
 
+def cash_pm_ol(request):
+    return render(request, 'pap/cash_pm_ol.html', {})
 
+def card_plm(request):
+    return render(request, 'pap/card_plm.html', {})
 
 def test(request):
     return render(request, 'pap/test.html', {})

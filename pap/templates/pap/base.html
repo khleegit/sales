@@ -64,22 +64,29 @@
 	                	<li><a href="{% url 'index' %}"><i class="fa fa-home"></i> Home </a></li>
 	                	<li><a><i class="fa fa-credit-card"></i> 결제내역 <span class="fa fa-chevron-down"></span></a>
 	                		<ul class="nav child_menu">
-	                    		<li><a href="{% url 'payment' %}">통합결제내역조회</a></li>
+	                    		<li><a href="{% url 'payment' %}">통합 결제내역 조회</a></li>
 	                      		<li><a>신용카드<span class="fa fa-chevron-down"></span></a>
                               <ul class="nav child_menu">
-                                <li class="sub_menu"><a href="{% url 'card_pm' %}">카드내역</a></li>
-                                <li class="sub_menu"><a href="{% url 'card_pm_ol' %}">카드중복예상내역</a></li>
+                                <li class="sub_menu"><a href="{% url 'card_pm' %}">카드 내역</a></li>
+                                <li class="sub_menu"><a href="{% url 'card_pm_ol' %}">카드 중복예상내역</a></li>
                              </ul>
                             </li>
 	                      		<li><a href="{% url 'vir_acc' %}">가상계좌</a></li>
                             <li><a href="{% url 'acc_tran' %}">계좌이체</a></li>
-                            <li><a href="{% url 'cash_pm' %}">휴대폰결제</a></li>
-		                      	<li><a>에스크로<span class="fa fa-chevron-down"></span></a>
+                            <li><a href="{% url 'ceph_pm' %}">휴대폰결제</a></li>
+		                      	<li><a>현금영수증<span class="fa fa-chevron-down"></span></a>
 		                      		<ul class="nav child_menu">
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">내역조회</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">배송조회</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'cash_pm' %}">현금영수증 내역</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'cash_pm_ol' %}">현금영수증 중복예상내역</a></li>
 			                  		 </ul>
-		                      	</li>            
+		                      	</li>
+                            <li><a>카드배치<span class="fa fa-chevron-down"></span></a>
+                              <ul class="nav child_menu">
+                                <li class="sub_menu"><a href="{% url 'card_plm' %}">카드배치등록</a></li>
+                                <li class="sub_menu"><a href="{% url 'cash_pm_ol' %}">카드배치조회</a></li>
+                             </ul>
+                            </li>
+                            <li><a href="{% url 'vir_acc' %}">환불</a></li>           
 	                    	</ul>
 	                  	</li>
                       <li><a><i class="fa fa-credit-card"></i> 매입내역 <span class="fa fa-chevron-down"></span></a>
