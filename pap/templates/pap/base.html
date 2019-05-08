@@ -118,6 +118,15 @@
                       		<li><a href="{% url 'taxinvoice_li' %}">세금계산서조회</a></li>
                       	</ul>
 	                  	</li>
+                      <li><a><i class="fa fa-credit-card"></i> 거래내역집계 <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="{% url 'cardtt_rp' %}">카드합계</a></li>
+                            <li><a href="{% url 'acctrantt_rp' %}">계좌이체합계</a></li>
+                            <li><a href="{% url 'viracctt_rp' %}">가상계좌합계</a></li>
+                            <li><a href="{% url 'cephpm_rp' %}">휴대폰합계</a></li>
+                            <li><a href="{% url 'cashpm_rp' %}">현금영수증합계</a></li>
+                        </ul>
+                      </li>
 	                  	<li><a><i class="fa fa-archive"></i> 기초 <span class="fa fa-chevron-down"></span></a>
 	                		<ul class="nav child_menu">
 	                      		<li><a>사용자관리<span class="fa fa-chevron-down"></span></a>
@@ -144,6 +153,12 @@
               	<div class="menu_section">
 	                <h3>Additional</h3>
 	                <ul class="nav side-menu">
+                    <li><a><i class="fa fa-credit-card"></i> 결제요청 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="{% url 'card_charge' %}">카드 결제</a></li>
+                        <li><a href="{% url 'acctrantt_rp' %}">현금영수증 결제</a></li>
+                      </ul>
+                    </li>
 	                	<li><a><i class="fa fa-question"></i> 고객지원 <span class="fa fa-chevron-down"></span></a>
 	                		<ul class="nav child_menu">
 	                    		<li><a href="{% url 'test' %}">공지사항</a></li>
@@ -161,7 +176,6 @@
 		                      	</li>
 	                    	</ul>
 	                  	</li>
-	                  	<li><a href="{% url 'payment' %}"><i class="fa fa-gift"></i> 부가서비스</a></li> 
 	                </ul>
 	            </div>
             <!-- /sidebar menu -->

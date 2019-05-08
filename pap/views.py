@@ -79,6 +79,24 @@ def pmpostpone_li(request):
 def taxinvoice_li(request):
     return render(request, 'pap/taxinvoice_li.html', {})
 
+def cardtt_rp(request):
+    return render(request, 'pap/cardtt_rp.html', {})
+
+def acctrantt_rp(request):
+    return render(request, 'pap/acctrantt_rp.html', {})
+
+def viracctt_rp(request):
+    return render(request, 'pap/viracctt_rp.html', {})
+
+def cephpm_rp(request):
+    return render(request, 'pap/cephpm_rp.html', {})
+
+def cashpm_rp(request):
+    return render(request, 'pap/cashpm_rp.html', {})
+
+def card_charge(request):
+    return render(request, 'pap/card_charge.html', {})
+
 def test(request):
     return render(request, 'pap/test.html', {})
 
