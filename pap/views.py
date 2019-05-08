@@ -37,8 +37,47 @@ def cash_pm(request):
 def cash_pm_ol(request):
     return render(request, 'pap/cash_pm_ol.html', {})
 
+def card_plm_ip(request):
+    return render(request, 'pap/card_plm_ip.html', {})
+
 def card_plm(request):
     return render(request, 'pap/card_plm.html', {})
+
+def refund(request):
+    return render(request, 'pap/refund.html', {})
+
+def purchase_case(request):
+    return render(request, 'pap/purchase_case.html', {})
+
+def purchase_li(request):
+    return render(request, 'pap/purchase_li.html', {})
+
+def purchase_li_file(request):
+    return render(request, 'pap/purchase_li_file.html', {})
+
+def purchase_li_rs(request):
+    return render(request, 'pap/purchase_li_rs.html', {})
+
+def sch_cal(request):
+    return render(request, 'pap/sch_cal.html', {})
+
+def pmdate_li(request):
+    return render(request, 'pap/pmdate_li.html', {})
+
+def pmmethod_li(request):
+    return render(request, 'pap/pmmethod_li.html', {})
+
+def outsam_li(request):
+    return render(request, 'pap/outsam_li.html', {})
+
+def balance_li(request):
+    return render(request, 'pap/balance_li.html', {})
+
+def pmpostpone_li(request):
+    return render(request, 'pap/pmpostpone_li.html', {})
+
+def taxinvoice_li(request):
+    return render(request, 'pap/taxinvoice_li.html', {})
 
 def test(request):
     return render(request, 'pap/test.html', {})

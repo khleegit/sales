@@ -1,0 +1,70 @@
+{% extends 'pap/base.html' %}
+
+{% block headline %}
+	<h3>카드 배치 등록</h3>
+{% endblock %}
+
+{% block topcontents %}
+	<div class="x_title">
+     	<h2>파일 정보</h2>
+      <div class="clearfix"></div>
+ 	</div>
+
+{% endblock %}
+
+{% block middlecontents %}
+	<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="x_panel">
+        <div class="x_title">
+          <h2>파일 업로드</h2>
+          <ul class="nav navbar-right panel_toolbox">
+            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+            <li><a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+          <h4>아래의 빈 공간을 클릭 후 등록하실 파일을 선택하세요.</h4>
+          <p style="color: #FCA205;">* 주의사항: 파일명은 가맹점ID_YYYYMMDDHH24</p>
+          <form action="form_upload.html" class="dropzone"></form>
+          <br />
+        </div>
+        <div class="x_content">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-round btn-success btn-lg">등록</button>
+          </div>
+        </div>
+        <div class="x_title" >
+          <h2>샘플파일 다운로드</h2>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+          <button class="btn btn-primary pull-left" style="margin-right: 5px;"><i class="fa fa-download"></i> 가맹점ID_YYYYMMDDHH24</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+
+{% block scripts %}
+	<!-- jQuery -->
+    <script src="../../static/pap/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../../static/pap/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../../static/pap/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../../static/pap/vendors/nprogress/nprogress.js"></script>
+    <!-- Dropzone.js -->
+    <script src="../../static/pap/vendors/dropzone/dist/min/dropzone.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../../static/pap/build/js/custom.min.js"></script>
+{% endblock %}
