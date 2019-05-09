@@ -94,6 +94,30 @@ def cephpm_rp(request):
 def cashpm_rp(request):
     return render(request, 'pap/cashpm_rp.html', {})
 
+def user_li(request):
+    return render(request, 'pap/user_li.html', {})
+
+def user_li_new(request):
+    return render(request, 'pap/user_li_new.html', {})
+
+def user_li_edit(request):
+    return render(request, 'pap/user_li_edit.html', {})
+
+def company_info(request):
+    return render(request, 'pap/company_info.html', {})
+
+def client_li(request):
+    return render(request, 'pap/client_li.html', {})
+
+def client_li_new(request):
+    return render(request, 'pap/client_li_new.html', {})
+
+def client_li_edit(request):
+    return render(request, 'pap/client_li_edit.html', {})
+
+def client_user_li(request):
+    return render(request, 'pap/client_user_li.html', {})
+
 def card_charge(request):
     return render(request, 'pap/card_charge.html', {})
 
@@ -103,6 +127,8 @@ def cash_charge(request):
 def test(request):
     return render(request, 'pap/test.html', {})
 
+def preparing(request):
+    return render(request, 'pap/preparing.html', {})
 
 """
 django test

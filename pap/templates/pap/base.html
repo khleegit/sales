@@ -131,17 +131,18 @@
 	                		<ul class="nav child_menu">
 	                      		<li><a>사용자관리<span class="fa fa-chevron-down"></span></a>
 	                      			<ul class="nav child_menu">
-	                      				<li class="sub_menu"><a href="{% url 'payment' %}">사용자리스트</a></li>
-	                      				<li class="sub_menu"><a href="{% url 'payment' %}">사용자상세정보</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">화면권한관리</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">사용자직급/부서관리</a></li>     
+	                      				<li class="sub_menu"><a href="{% url 'user_li' %}">사용자리스트</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'preparing' %}">사용자별 화면권한관리</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'preparing' %}">사용자 기초관리</a></li>     
 			                      	</ul>
 	                      		</li>
-	                      		<li><a>거래처정보<span class="fa fa-chevron-down"></span></a>
+                            <li class="sub_menu"><a href="{% url 'company_info' %}">업체 정보</a></li>
+	                      		<li><a>프로그램 관리자<span class="fa fa-chevron-down"></span></a>
 		                      		<ul class="nav child_menu">
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">거래처리스트</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">거래처상세정보</a></li>
-			                  		</ul>
+			                      		<li class="sub_menu"><a href="{% url 'client_li' %}">거래처 리스트</a></li>
+                                <li class="sub_menu"><a href="{% url 'client_user_li' %}">거래처별 사용자 리스트</a></li>
+                                <li class="sub_menu"><a href="{% url 'preparing' %}">거래처별 화면권한관리</a></li>
+                              </ul>
 		                      	</li>         
 	                    	</ul>
 	                  	</li>
@@ -161,17 +162,17 @@
                     </li>
 	                	<li><a><i class="fa fa-question"></i> 고객지원 <span class="fa fa-chevron-down"></span></a>
 	                		<ul class="nav child_menu">
-	                    		<li><a href="{% url 'test' %}">공지사항</a></li>
+	                    		<li><a href="{% url 'preparing' %}">공지사항</a></li>
 	                      		<li><a>문의하기<span class="fa fa-chevron-down"></span></a>
 	                      			<ul class="nav child_menu">
-	                      				<li class="sub_menu"><a href="{% url 'payment' %}">FAQ</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">상담문의</a></li>	                  
+	                      				<li class="sub_menu"><a href="{% url 'preparing' %}">FAQ</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'preparing' %}">상담문의</a></li>	                  
 			                  		</ul>
 	                      		</li>
 	                      		<li><a>기술지원<span class="fa fa-chevron-down"></span></a>
 		                      		<ul class="nav child_menu">
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">매뉴얼</a></li>
-			                      		<li class="sub_menu"><a href="{% url 'payment' %}">각종 서식</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'preparing' %}">매뉴얼</a></li>
+			                      		<li class="sub_menu"><a href="{% url 'preparing' %}">각종 서식</a></li>
 			                  		</ul>
 		                      	</li>
 	                    	</ul>

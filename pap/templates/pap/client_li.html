@@ -1,0 +1,190 @@
+{% extends 'pap/base.html' %}
+
+{% block headline %}
+	<h3>거래처 리스트</h3>
+{% endblock %}
+
+{% block topcontents %}
+	<div class="x_title">
+     	<h2>조회 조건</h2>
+     	<ul class="nav navbar-right panel_toolbox">
+            <li style="padding-right: 50px"><a class="showLoading-link"><i class="fa fa-search" title="조회"></i></a>
+            </li>
+        	<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+        	</li>
+        	<li><a class="close-link"><i class="fa fa-close"></i></a>
+        	</li>
+     	</ul>
+     	<div class="clearfix"></div>
+ 	</div>
+ 	<div class="x_content">
+ 		<div class="col-md-12">
+	 		<form class="form-horizontal form-label-left">
+	 			<div class="form-group">
+		            <div class="col-md-1" style="text-align:right;">             
+                        <select class="form-control">
+                            <option>등록일자</option>
+                            <option>해지일자</option>
+                        </select>            
+                    </div>
+		            <div class="col-md-2">
+		                <form class="form-horizontal">
+		                  	<fieldset>
+		                    	<div class="control-group">
+		                      		<div class="controls">
+		                        		<div class="input-prepend input-group">
+		                          			<span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+		                          			<input type="text" name="reservation" id="reservation" class="form-control" value="04/05/2019 - 04/05/2019" />
+		                        		</div>
+		                      		</div>
+		                    	</div>
+		                  	</fieldset>
+		                </form>
+		            </div>
+                    <div class="col-md-6">
+                        <div class="col-md-5">
+                            <div class="bs-example-popovers">
+                              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
+                                오늘
+                              </button>
+                              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
+                                한달
+                              </button>
+                              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                세달
+                              </button>
+                              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                일주일
+                              </button>
+                            </div>
+                        </div>
+                    </div>                   	
+	            </div>
+	        </form>
+        </div>
+        <div class="col-md-12">
+            <form class="form-horizontal form-label-left">
+                <div class="form-group">
+                    <div class="col-md-1" style="text-align:right;">
+                        <label class="control-label" >조회조건</label>
+                    </div>
+                    <div class="col-md-1">
+                        <select class="form-control">
+                            <option>거래처명</option>
+                            <option>사업자등록번호</option>
+                            <option>법인명(상호)</option>
+                            <option>대표자</option>
+                            <option>법인번호</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-1" style="text-align:right;">
+                        <label class="control-label" >사용유무</label>
+                    </div>
+                    <div class="col-md-1">
+                        <select class="form-control">
+                            <option>사용</option>
+                            <option>숨김</option>
+                            <option>전체</option>
+                        </select>
+                    </div>
+                </div>
+            </form>   
+	    </div>
+ 	</div>
+{% endblock %}
+
+{% block middlecontents %}
+	<div class="x_title">
+     	<h2>거래처 리스트</h2>
+     	<ul class="nav navbar-right panel_toolbox">
+            <li style="padding-right: 10px">
+                <a href="{% url 'client_li_new' %}" onclick="window.open(this.href,'_blanck','width=500, height=500'); return false">
+                    <i class="fa fa-file-o fa-lg" title="신규" style="color: blue;"></i>
+                </a>
+            </li>
+            <li style="padding-right: 10px">
+                <a href="{% url 'client_li_edit' %}" onclick="window.open(this.href,'_blanck','width=500, height=500'); return false">
+                    <i class="fa fa-floppy-o fa-lg" title="수정" style="color: blue;"></i>
+                </a>
+            </li>
+            <li style="padding-right: 50px">
+                <a><i class="fa fa-trash-o fa-lg" data-toggle="modal" data-target=".bs-example-modal-sm" title="삭제" style="color: orange;"></i></a>
+                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">거래처 리스트 삭제</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>선택하신 거래처를 삭제 하시겠습니까?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+                              <button type="button" class="btn btn-primary">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        	<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+        	<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+     	</ul>
+     	<div class="clearfix"></div>
+ 	</div>
+ 	<div class="x_content">
+        <table id="datatable-checkbox" class="table table-striped table-bordered bulk_action">
+        	<thead>
+          		<tr>
+                    <th><input type="checkbox" id="check-all" class="flat"></th>
+           			<th style="text-align:center;">사용유무</th>
+                    <th style="text-align:center;">거래처코드</th>
+                    <th style="text-align:center;">거래처명</th>
+                    <th style="text-align:center;">등록일자</th>
+                    <th style="text-align:center;">사업자등록번호</th>
+                    <th style="text-align:center;">법인명(상호)</th>
+                    <th style="text-align:center;">업태</th>
+                    <th style="text-align:center;">업종</th>
+                    <th style="text-align:center;">대표자</th>
+                    <th style="text-align:center;">전화번호</th>
+                    <th style="text-align:center;">팩스번호</th>
+                    <th style="text-align:center;">사업자등록주소</th>
+                    <th style="text-align:center;">실제사업장주소</th>
+                    <th style="text-align:center;">email</th>
+                    <th style="text-align:center;">법인번호</th>
+                    <th style="text-align:center;">등록자</th>
+                    <th style="text-align:center;">해지일</th>
+                    <th style="text-align:center;">해지사유</th>
+          		</tr>
+      		</thead>
+     	</table>
+ 	</div>
+{% endblock %}
+
+
+
+{% block scripts %}
+	<!-- Datatables -->
+    <script src="../../static/pap/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../../static/pap/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../../static/pap/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../../static/pap/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../../static/pap/vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script>
+        $('datatable-checkbox').DataTable();
+    </script>
+{% endblock %}

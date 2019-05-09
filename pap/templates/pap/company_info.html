@@ -1,0 +1,167 @@
+{% extends 'pap/base.html' %}
+
+{% block headcontents %}
+  <!-- bootstrap-wysiwyg -->
+  <link href="../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+  <!-- Select2 -->
+  <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+  <!-- Switchery -->
+  <link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+  <!-- starrr -->
+  <link href="../vendors/starrr/dist/starrr.css" rel="stylesheet">
+{% endblock %}
+
+{% block headline %}
+    <h3>업체 정보</h3>
+{% endblock %}
+
+
+{% block middlecontents %}
+
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+      <div class="x_title">
+        <h2>사업자 정보</h2>
+        <ul class="nav navbar-right panel_toolbox">
+          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+          </li>
+          <li><a class="close-link"><i class="fa fa-close"></i></a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+      <br />
+        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">상호</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">대표자명</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">과세유형</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">사업자주소</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">사업자번호</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">전화번호</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">영세중소우대사업자여부</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="x_panel">
+      <div class="x_title">
+        <h2>가맹점 정보</h2>
+        <ul class="nav navbar-right panel_toolbox">
+          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+          </li>
+          <li><a class="close-link"><i class="fa fa-close"></i></a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+      <br />
+        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">가맹점ID</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">홈페이지 URL</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">가맹점명</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="middle-name" class="control-label col-md-4">계약일</label>
+              <div class="col-md-8">
+                <input id="middle-name" class="form-control" type="text" name="middle-name">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+
+{% block scripts %}
+     <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+
+    <!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+
+    <!-- Autosize -->
+    <script src="../vendors/autosize/dist/autosize.min.js"></script>
+
+    <!-- jQuery autocomplete -->
+    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+
+    <!-- starrr -->
+    <script src="../vendors/starrr/dist/starrr.js"></script>
+{% endblock %}
