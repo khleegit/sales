@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block headline %}
-	<h3>카드 결제</h3>
+	<h3>현금영수증 결제</h3>
 {% endblock %}
 
 
@@ -42,74 +42,68 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label col-md-4" for="first-name">상품명<span class="required">*</span>
+                <label class="control-label col-md-4" for="first-name">거래구분<span class="required">*</span>
+                </label>
+                <div class="col-md-8">
+                  <select class="form-control">
+                    <option>소득공제</option>
+                    <option>지출증빙</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-4" for="first-name">인증값구분<span class="required">*</span>
+                </label>
+                <div class="col-md-8">
+                  <select class="form-control">
+                    <option>휴대폰번호</option>
+                    <option>주민번호</option>
+                    <option>현금영수증 전용카드</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-4" for="first-name">인증값<span class="required">*</span>
                 </label>
                 <div class="col-md-8">
                   <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label col-md-4" for="first-name">거래금액 <span class="required">*</span>
+                <label class="control-label col-md-4" for="first-name">결제총금액<span class="required">*</span>
                 </label>
                 <div class="col-md-8">
-                  <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-md-4" for="first-name">카드번호<span class="required">*</span>
-                </label>
-                <div class="col-md-8">
-                  <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-md-4" for="first-name">유효기간<span class="required">*</span>
-                </label>
-                <div class="col-md-8">
-                  <div class="col-md-6">
-                    <select class="form-control">
-                      <option></option>
-                      <option>2019년</option>
-                      <option>2020년</option>
-                      <option>2021년</option>
-                      <option>2022년</option>
-                      <option>2023년</option>
-                      <option>2024년</option>
-                      <option>2025년</option>
-                      <option>2026년</option>
-                      <option>2027년</option>
-                      <option>2028년</option>
-                      <option>2029년</option>
-                      <option>2030년</option>
-                      <option>2031년</option>
-                      <option>2032년</option>
-                      <option>2033년</option>
-                      <option>2034년</option>
-                      <option>2035년</option>
-                    </select>
+                  <div class="col-md-8">
+                    <input type="text" id="first-name" required="required" class="form-control" placeholder="= 공급가액+부가세+봉사료">
                   </div>
-                  <div class="col-md-6">
-                    <select class="form-control">
-                      <option></option>
-                      <option>1월</option>
-                      <option>2월</option>
-                      <option>3월</option>
-                      <option>4월</option>
-                      <option>5월</option>
-                      <option>6월</option>
-                      <option>7월</option>
-                      <option>8월</option>
-                      <option>9월</option>
-                      <option>10월</option>
-                      <option>11월</option>
-                      <option>12월</option>
-                    </select>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-success">부가세자동계산</button>
                   </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-4" for="first-name">부가세<span class="required">*</span>
+                </label>
+                <div class="col-md-8">
+                  <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-4" for="first-name">봉사료<span class="required">*</span>
+                </label>
+                <div class="col-md-8">
+                  <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
                 </div>
               </div>
             </div>
 
             <div class="col-md-5">
+              <div class="form-group">
+                <label for="middle-name" class="control-label col-md-4">상품명</label>
+                <div class="col-md-8">
+                  <input id="middle-name" class="form-control" type="text" name="middle-name">
+                </div>
+              </div>
               <div class="form-group">
                 <label for="middle-name" class="control-label col-md-4">고객ID</label>
                 <div class="col-md-8">
@@ -129,44 +123,17 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="middle-name" class="control-label col-md-4">할부</label>
+                <label for="middle-name" class="control-label col-md-4">메모</label>
                 <div class="col-md-8">
-                  <select class="form-control">
-                    <option>일시불</option>
-                    <option>2개월</option>
-                    <option>3개월</option>
-                    <option>4개월</option>
-                    <option>5개월</option>
-                    <option>6개월</option>
-                    <option>7개월</option>
-                    <option>8개월</option>
-                    <option>9개월</option>
-                    <option>10개월</option>
-                    <option>11개월</option>
-                    <option>12개월</option>
-                    <option>13개월</option>
-                    <option>14개월</option>
-                    <option>15개월</option>
-                    <option>16개월</option>
-                    <option>17개월</option>
-                    <option>18개월</option>
-                    <option>19개월</option>
-                    <option>20개월</option>
-                    <option>21개월</option>
-                    <option>22개월</option>
-                    <option>23개월</option>
-                    <option>24개월</option>
-                    <option>기타</option>
-                  </select>
+                  <input id="middle-name" class="form-control" type="text" name="middle-name">
                 </div>
               </div>
               <div class="form-group">
-                <label for="middle-name" class="control-label col-md-4">카드종류</label>
+                <label for="middle-name" class="control-label col-md-4">하위가맹점여부</label>
                 <div class="col-md-8">
                   <select class="form-control">
-                    <option>단독승인</option>
-                    <option>인증(개인)</option>
-                    <option>인증(법인)</option>
+                    <option>미사용</option>
+                    <option>사용</option>
                   </select>
                 </div>
               </div>

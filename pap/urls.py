@@ -33,6 +33,7 @@ urlpatterns = [
 	path('cephpm_rp/', views.cephpm_rp, name='cephpm_rp'),
 	path('cashpm_rp/', views.cashpm_rp, name='cashpm_rp'),
 	path('card_charge/', views.card_charge, name='card_charge'),
+	path('cash_charge/', views.cash_charge, name='cash_charge'),
 	path('test/', views.test, name='test'),
     # path('', views.post_list, name='post_list'),
     # path('post/<int:pk>/', views.post_detail, name='post_detail'),

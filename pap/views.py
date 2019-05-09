@@ -97,6 +97,9 @@ def cashpm_rp(request):
 def card_charge(request):
     return render(request, 'pap/card_charge.html', {})
 
+def cash_charge(request):
+    return render(request, 'pap/cash_charge.html', {})
+
 def test(request):
     return render(request, 'pap/test.html', {})
 
