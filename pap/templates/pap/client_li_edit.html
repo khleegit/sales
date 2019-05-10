@@ -33,6 +33,7 @@
             <div class="x_panel">
               <div class="x_content">
                 <form class="form-horizontal form-label-left" novalidate>
+                  <p>* 표시는 필수 입력 항목으로 수정은 가능하나 공백을 만들 수는 없습니다.</p>
                   <div class="item form-group">
                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">사용유무
                     </label>
@@ -44,7 +45,7 @@
                     </div>
                   </div>
                   <div class="item form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">거래처명
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">거래처명<span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <input id="name" class="form-control col-md-7 col-xs-12" required="required" type="text">
@@ -58,7 +59,7 @@
                     </div>
                   </div>
                   <div class="item form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="occupation">사업자등록번호
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="occupation">사업자등록번호<span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <input id="occupation" type="text" name="occupation" data-validate-length-range="5,20" class="optional form-control col-md-7 col-xs-12">
@@ -93,7 +94,7 @@
                     </div>
                   </div>
                   <div class="item form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">전화번호
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">전화번호<span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <input type="tel" id="telephone" name="phone" required="required" data-validate-length-range="8,20" class="form-control col-md-7 col-xs-12">
@@ -121,7 +122,7 @@
                     </div>
                   </div>
                   <div class="item form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email<span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">

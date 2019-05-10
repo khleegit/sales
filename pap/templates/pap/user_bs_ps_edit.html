@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="../../static/pap/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../../static/pap/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../../static/pap/vendors/nprogress/nprogress.css" rel="stylesheet">
+    
+    <!-- Custom Theme Style -->
+    <link href="../../static/pap/build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="right_col" role="main">
+      <div class="">
+        <div class="page-title">
+          <div class="title_left">
+            <h3>직급 수정</h3>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+              <div class="x_content">
+                <form class="form-horizontal form-label-left" novalidate>
+                  <p>* 표시는 필수 입력 항목입니다.</p>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="occupation">사용유무 <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <select class="form-control">
+                        <option>사용</option>
+                        <option>숨김</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">직급코드<span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input type="text" class="form-control" readonly="readonly">
+                    </div>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="occupation">직급명 <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input id="occupation" type="text" name="occupation" data-validate-length-range="5,20" class="optional form-control col-md-7 col-xs-12">
+                    </div>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">순서
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input type="number" id="number" name="number" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                    </div>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">메모
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <textarea id="textarea" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+                    </div>
+                  </div>
+                  <div class="ln_solid"></div>
+                  <div class="form-group">
+                    <div align="center">
+                      <button type="submit" class="btn btn-primary">취소</button>
+                      <button id="send" type="submit" class="btn btn-success">저장</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../../static/pap/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../../static/pap/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../../static/pap/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../../static/pap/vendors/nprogress/nprogress.js"></script>
+    <!-- validator -->
+    <script src="../../static/pap/vendors/validator/validator.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../../static/pap/build/js/custom.min.js"></script>
+	
+  </body>
+</html>

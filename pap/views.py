@@ -103,6 +103,27 @@ def user_li_new(request):
 def user_li_edit(request):
     return render(request, 'pap/user_li_edit.html', {})
 
+def user_authority_ad(request):
+    return render(request, 'pap/user_authority_ad.html', {})
+
+def user_authority_user_edit(request):
+    return render(request, 'pap/user_authority_user_edit.html', {})
+
+def user_bs(request):
+    return render(request, 'pap/user_bs.html', {})
+
+def user_bs_dp_new(request):
+    return render(request, 'pap/user_bs_dp_new.html', {})
+
+def user_bs_dp_edit(request):
+    return render(request, 'pap/user_bs_dp_edit.html', {})
+
+def user_bs_ps_new(request):
+    return render(request, 'pap/user_bs_ps_new.html', {})
+
+def user_bs_ps_edit(request):
+    return render(request, 'pap/user_bs_ps_edit.html', {})
+
 def company_info(request):
     return render(request, 'pap/company_info.html', {})
 
@@ -117,6 +138,18 @@ def client_li_edit(request):
 
 def client_user_li(request):
     return render(request, 'pap/client_user_li.html', {})
+
+def screen_authority_ad(request):
+    return render(request, 'pap/screen_authority_ad.html', {})
+
+def screen_authority_ad_new(request):
+    return render(request, 'pap/screen_authority_ad_new.html', {})
+
+def screen_authority_ad_edit(request):
+    return render(request, 'pap/screen_authority_ad_edit.html', {})
+
+def screen_client_ad_edit(request):
+    return render(request, 'pap/screen_client_ad_edit.html', {})
 
 def card_charge(request):
     return render(request, 'pap/card_charge.html', {})
